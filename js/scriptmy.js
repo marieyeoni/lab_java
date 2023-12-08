@@ -1,10 +1,8 @@
 function enter() {
     var binarynum = document.getElementById("binarynum").value;
-    var hex = "<label style=\"color: #0d6efd;\">16진수: " + "<input type=\"text\" id=\"hexv\">" + "</label>"
-    document.getElementById("hexa").innerHTML = hex;
 
-    var hexv = parseInt(binarynum, 2).toString(16).toUpperCase();
-    document.getElementById("hexv").value = hexv;
+    var hex = parseInt(binarynum, 2).toString(16).toUpperCase();
+    document.getElementById("hexa").value = hex;
 }
 
 function pascalValue(row, col) {
