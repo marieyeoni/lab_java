@@ -1,7 +1,7 @@
 function enter() {
     var binarynum = document.getElementById("binarynum").value;
-    var hex = parseInt(binarynum, 2).toString(16).toUpperCase();
-    document.getElementById("hexa").value = hex;
+    var hexa = parseInt(binarynum, 2).toString(16).toUpperCase();
+    document.getElementById("hexa").value = hexa;
 }
 
 function pascalValue(row, col) {
