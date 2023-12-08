@@ -27,4 +27,5 @@ function pascalTriangle() {
         result += "<br>";
     }
     document.getElementById("pas").innerHTML = result;
+    console.log(result);
 }
