@@ -1,9 +1,13 @@
-function enter() {
-    var binarynum = document.getElementById("binarynum").value;
-    var hexa = parseInt(binarynum, 2).toString(16).toUpperCase();
-    document.getElementById("hexa").value = hexa;
-    console.log(hexa);
+document.addEventListener("DOMContentLoaded",
+    function enter() {
+    document.getElementById("bu").addEventListener("click", hexademical);
+    function hexademical() {
+        var hexv = document.getElementById("binarynum").value;
+        var hex = parseInt(hexv, 2).toString(16).toUpperCase();
+        document.getElementById("hexa").value = hex;
+    }
 }
+);
 
 function pascalValue(row, col) {
   if ( col  === 0) {
